@@ -1,0 +1,58 @@
+classDiagram
+    direction TB
+
+    class Bill {
+        <<abstract>>
+        -string billId
+        -string patient
+        +Bill(string, string)
+        +total() double*
+        +type() string*
+        +print() void
+        +~Bill() virtual
+    }
+
+    class OutPatientBill {
+        -double consultationCharge
+        -double testCharges
+        +OutPatientBill(...)
+        +total() double
+        +type() string
+    }
+
+    class InPatientBill {
+        -int days
+        -double roomRatePerDay
+        -double procedureCharges
+        -double medicineCharges
+        +InPatientBill(...)
+        +total() double
+        +type() string
+    }
+
+    class DayCareBill {
+        -string packageCode
+        -double packagePrice
+        +DayCareBill(...)
+        +total() double
+        +type() string
+    }
+
+    class EmergencyBill {
+        -double baseCharge
+        -double timeBasedCharges
+        +EmergencyBill(...)
+        +total() double
+        +type() string
+    }
+
+    Bill <|-- OutPatientBill : public inheritance
+    Bill <|-- InPatientBill : public inheritance
+    Bill <|-- DayCareBill : public inheritance
+    Bill <|-- EmergencyBill : public inheritance
+
+    note for Bill "total() and type() are pure virtual.\nprint() is common behaviour.\nDestructor is virtual."
+    note for InPatientBill "total = days * room rate\n+ procedures + medicines"
+    note for OutPatientBill "total = consultation\n+ tests"
+    note for DayCareBill "total = package price"
+    note for EmergencyBill "total = base charge\n+ time-based charges"

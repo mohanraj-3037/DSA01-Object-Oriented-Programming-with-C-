@@ -1,0 +1,22 @@
+flowchart TD
+    A["Application calls billing service"] --> B["Validation / repository operation"]
+    B --> C{"Failure detected?"}
+    C -- "No" --> D["Return normal result"]
+    C -- "Yes" --> E["Throw typed exception"]
+    E --> F["Service layer catches only if context is useful"]
+    F --> G["Add safe context / log once"]
+    G --> H["throw; rethrows same exception"]
+    H --> I["Stack unwinding begins"]
+    I --> J["Destroy automatic objects in reverse construction order"]
+    J --> K["RAII owners release memory, files and locks"]
+    K --> L["Application boundary catches exception"]
+    L --> M["Report safe failure to user"]
+    L --> N["Record failed operation; do not mark claim paid"]
+
+    subgraph RAII["Examples of RAII owners"]
+      R1["unique_ptr: releases owned object"]
+      R2["vector: releases allocated storage"]
+      R3["file stream: closes file"]
+      R4["lock_guard: unlocks mutex"]
+    end
+    K -. "automatic cleanup" .-> RAII

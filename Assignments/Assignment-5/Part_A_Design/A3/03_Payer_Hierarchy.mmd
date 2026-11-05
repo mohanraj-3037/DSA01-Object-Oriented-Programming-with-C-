@@ -1,0 +1,44 @@
+classDiagram
+    direction TB
+
+    class Payer {
+        <<abstract>>
+        +amountCovered(const Bill&) double*
+        +~Payer() virtual
+    }
+
+    class SelfPay {
+        +amountCovered(const Bill&) double
+    }
+
+    class Insurance {
+        -double coverLimit
+        -double remainingCover
+        -double coPaymentPercent
+        +amountCovered(const Bill&) double
+    }
+
+    class GovernmentScheme {
+        -map~string,double~ packageRates
+        +amountCovered(const Bill&) double
+    }
+
+    class CorporatePayer {
+        -double negotiatedCoveragePercent
+        -double contractLimit
+        +amountCovered(const Bill&) double
+    }
+
+    class Bill {
+        <<abstract>>
+        +total() double*
+        +type() string*
+    }
+
+    Payer <|-- SelfPay
+    Payer <|-- Insurance
+    Payer <|-- GovernmentScheme
+    Payer <|-- CorporatePayer
+    Payer ..> Bill : calculates cover for
+    note for Insurance "Illustrative convention:\npercentage is patient co-pay.\nInsurer share is capped by\nremaining cover."
+    note for GovernmentScheme "Uses fixed package rates.\nActual rate table is not\nprovided in the assignment."

@@ -1,0 +1,15 @@
+C++17 compile check using g++ -std=c++17 -Wall -Wextra -pedantic
+
+Part_B_Implementation/B1/02_Source_Code/Task02_main.cpp: PASS
+Part_B_Implementation/B1/02_Source_Code/main.cpp: PASS
+Part_B_Implementation/B1/02_Source_Code/no_virtual_destructor.cpp: PASS
+Part_B_Implementation/B2/02_Source_Code/TODO_B2_completed.cpp: PASS
+Part_B_Implementation/B2/02_Source_Code/main.cpp: PASS
+Part_B_Implementation/B2/02_Source_Code/rethrow_by_value.cpp: PASS
+Part_B_Implementation/B2/02_Source_Code/rethrow_complete.cpp: PASS
+Part_B_Implementation/B3/02_Source_Code/benchmark.cpp: PASS
+Part_B_Implementation/B3/02_Source_Code/exception_benchmark.cpp: PASS
+Part_B_Implementation/B4/02_Source_Code/TODO_B1_completed.cpp: PASS
+Part_B_Implementation/B4/02_Source_Code/main.cpp: PASS
+
+Note: no_virtual_destructor.cpp intentionally demonstrates undefined behaviour; compiler warning expected. Run sanitizer locally and record actual evidence.

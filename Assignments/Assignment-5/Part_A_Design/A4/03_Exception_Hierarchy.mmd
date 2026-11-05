@@ -1,0 +1,39 @@
+classDiagram
+    direction TB
+
+    class exception {
+        <<std>>
+        +what() const char*
+    }
+
+    class runtime_error {
+        <<std>>
+    }
+
+    class bad_alloc {
+        <<std>>
+    }
+
+    class BillingError {
+        <<custom>>
+        +BillingError(string)
+        +what() const char*
+    }
+
+    class InvalidChargeError
+    class ClaimError
+    class CoverageExceededError
+    class UnknownPackageError
+    class PatientNotFoundError
+
+    exception <|-- runtime_error
+    exception <|-- bad_alloc
+    runtime_error <|-- BillingError
+    BillingError <|-- InvalidChargeError
+    BillingError <|-- ClaimError
+    ClaimError <|-- CoverageExceededError
+    BillingError <|-- UnknownPackageError
+    BillingError <|-- PatientNotFoundError
+
+    note for bad_alloc "Standard allocation failure.\nNot a BillingError."
+    note for BillingError "Common custom base for\nbilling-domain failures."

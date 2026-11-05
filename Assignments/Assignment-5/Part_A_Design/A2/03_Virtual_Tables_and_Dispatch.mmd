@@ -1,0 +1,29 @@
+flowchart TD
+    A["Bill* b"] --> B["b points to an OPBill object"]
+    B --> C["Call b->show()"]
+    C --> D["show() is non-virtual"]
+    D --> E["Bill::show() is selected"]
+    E --> F["Bill::show() calls total()"]
+    F --> G["total() is virtual"]
+    G --> H["Dynamic type is OPBill"]
+    H --> I["OPBill::total() is selected"]
+    I --> J["Returns 500"]
+    J --> K["show() prints 500"]
+
+    subgraph BILL["Conceptual Bill vtable"]
+      B1["total: pure virtual"]
+      B2["type: pure virtual"]
+      B3["destructor: Bill::~Bill"]
+    end
+    subgraph OP["Conceptual OutPatientBill vtable"]
+      O1["total: OutPatientBill::total"]
+      O2["type: OutPatientBill::type"]
+      O3["destructor: OutPatientBill::~OutPatientBill"]
+    end
+    subgraph IP["Conceptual InPatientBill vtable"]
+      I1["total: InPatientBill::total"]
+      I2["type: InPatientBill::type"]
+      I3["destructor: InPatientBill::~InPatientBill"]
+    end
+
+    H -. "dispatch uses derived table" .-> OP
