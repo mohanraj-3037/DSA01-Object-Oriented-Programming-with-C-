@@ -1,0 +1,7 @@
+PREDICTED OUTPUT for the supplied Token program (before execution)
+
+101 103 104 4
+
+Reason: `next` begins at 100. The three array elements call the constructor three
+times, receiving IDs 101, 102, 103. `extra` calls it once more and receives 104.
+`issued()` returns next - 100, which is 4.

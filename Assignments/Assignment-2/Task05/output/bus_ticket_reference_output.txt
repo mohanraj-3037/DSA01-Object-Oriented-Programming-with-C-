@@ -1,0 +1,12 @@
+Asha: Seat 1
+Bala: Seat 2
+Chitra: Seat 3
+Dev: Waiting
+Issued: 3
+Two further batches:
+BatchA-1: Waiting
+BatchA-2: Waiting
+Cumulative issued: 3
+BatchB-1: Waiting
+BatchB-2: Waiting
+Cumulative issued: 3

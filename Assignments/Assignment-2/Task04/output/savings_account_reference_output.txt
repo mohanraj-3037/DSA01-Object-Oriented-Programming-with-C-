@@ -1,0 +1,13 @@
+Account: 10001
+Last 10 transactions:
+Deposit  3000 paise
+Deposit  4000 paise
+Deposit  5000 paise
+Deposit  6000 paise
+Deposit  7000 paise
+Withdraw 500 paise
+Withdraw 1000 paise
+Withdraw 1500 paise
+Withdraw 2000 paise
+Withdraw 2500 paise
+Balance: 120500 paise

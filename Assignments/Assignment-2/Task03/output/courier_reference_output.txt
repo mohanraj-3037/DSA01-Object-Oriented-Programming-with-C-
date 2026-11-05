@@ -1,0 +1,6 @@
+charge(2)       -> double/kg overload: 0.10
+charge(2.0)     -> double/kg overload: 100.00
+charge(2.0f)    -> double/kg overload: 100.00
+charge(2000)    -> int/grams overload: 100.00
+charge(Parcel)  -> Parcel overload: 175.00
+charge(2,true)  -> double/kg overload: 130.00

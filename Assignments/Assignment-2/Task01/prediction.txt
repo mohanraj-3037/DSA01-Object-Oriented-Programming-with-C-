@@ -1,0 +1,14 @@
+PREDICTED OUTPUT (write this before running the supplied program)
+
+1 12 13
+1 100
+16 13 6
+
+Reason:
+- change(a,b,&c): a is passed by value and remains 1; b is a reference and becomes 12;
+  c is reached through its pointer and becomes 13.
+- bigger(a,c) returns a reference to the larger object. Since c (13) is larger,
+  the assignment sets c to 100.
+- show(1) uses y=5,z=10: 16.
+- show(1,2) uses z=10: 13.
+- show(1,2,3) uses no defaults: 6.

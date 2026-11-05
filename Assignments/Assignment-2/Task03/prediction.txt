@@ -1,0 +1,18 @@
+PREDICTED OVERLOAD SELECTIONS (before execution)
+1. charge(2): double/kg overload. The int overload is also viable, however this prediction needs
+   careful checking: the int overload is an exact match and therefore is selected.
+2. charge(2.0): double/kg overload (exact match).
+3. charge(2.0f): double/kg overload (float-to-double conversion; no competing float overload).
+4. charge(2000): int/grams overload (exact match).
+5. charge(p): Parcel overload (exact match).
+6. charge(2.0, true): double/kg overload with insured default false.
+
+Correction to item 1: `charge(2)` selects `charge(int)` because exact match beats conversion to double.
+Expected numerical results:
+charge(2) = 0.10 (2000 grams => 2 kg => 100.00? See note below)
+The int overload treats its integer argument as grams, so charge(2) = 0.10.
+charge(2.0) = 100.00
+charge(2.0f) = 100.00
+charge(2000) = 100.00
+charge(Parcel) = 175.00
+charge(2.0,true) = 130.00

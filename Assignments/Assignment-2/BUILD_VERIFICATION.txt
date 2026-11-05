@@ -1,0 +1,20 @@
+Task01/call_types.cpp: COMPILED
+  execution: PASS (reference output saved)
+Task01/complete_code.cpp: COMPILED
+  execution: PASS (reference output saved)
+Task02/return_reference.cpp: COMPILED
+  diagnostics: /mnt/data/DSA01-Assignment2-CO2/Task02/return_reference.cpp: In function ‘int& danglingReference()’: | /mnt/data/DSA01-Assignment2-CO2/Task02/return_reference.cpp:29:12: warning: reference to local variable ‘local’ returned [-Wreturn-local-addr] |    29 |     return local; |       |            ^~~~~ | /mnt/data/DSA01-Assignment2-CO2/Task02/return_reference.cpp:28:9: note: declared here |    28 |     int local = 42; |       |         ^~~~~
+  execution: PASS (reference output saved)
+Task03/courier.cpp: COMPILED
+  execution: PASS (reference output saved)
+Task04/savings_account.cpp: COMPILED
+  execution: PASS (reference output saved)
+Task05/bus_ticket.cpp: COMPILED
+  execution: PASS (reference output saved)
+Task06/benchmark.cpp: COMPILED
+Task06/time_friend.cpp: COMPILED
+  execution: PASS (reference output saved)
+Task06/time_member.cpp: COMPILED
+  execution: PASS (reference output saved)
+Task07/benchmark.cpp: COMPILED
+Task07/original/shift_buffer.cpp: SUPPORTING IMPLEMENTATION (compiled through Task07/benchmark.cpp; no standalone main)
