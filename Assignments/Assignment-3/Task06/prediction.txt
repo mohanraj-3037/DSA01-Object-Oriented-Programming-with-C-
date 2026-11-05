@@ -1,0 +1,4 @@
+The visible text output includes:
+Hello world
+true
+Copy-constructor diagnostic markers may appear before the text due to the explicit logging in the copy constructor.

@@ -1,0 +1,3 @@
+Expected final data line:
+Ibuprofen ORS | Paracetamol Cetirizine | Paracetamol ORS
+The implementation also prints a copy-constructor marker before that line.

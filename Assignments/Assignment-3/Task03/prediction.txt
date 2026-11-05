@@ -1,0 +1,1 @@
+See logger_prediction.txt for the exact predicted Logger sequence. Run it locally to verify compiler-specific output and record any difference.

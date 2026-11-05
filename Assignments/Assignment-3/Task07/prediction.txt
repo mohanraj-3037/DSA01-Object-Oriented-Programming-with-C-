@@ -1,0 +1,1 @@
+Expected series result: 10.000 + j15.000, magnitude about 18.028. Parallel result is calculated by the program. Division by zero prints a handled error message.

@@ -1,0 +1,5 @@
+Expected first two lines:
+Rs 200.00
+true
+Then carry test: Rs 1.25
+Negative test: Rs -1.00

@@ -1,0 +1,1 @@
+Assignment Counter program expected output: 5 7 7

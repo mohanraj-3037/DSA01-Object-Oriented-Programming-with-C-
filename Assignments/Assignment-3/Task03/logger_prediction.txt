@@ -1,0 +1,4 @@
+Predicted output for the Logger program in the assignment:
++A +B -B copyAc use -Ac +P -P end -A
+
+Reason: a is constructed first; b is constructed and destroyed at block exit; passing a by value creates copy Ac, which is destroyed after use(); P is dynamically created and destroyed by delete; a is destroyed at main exit.

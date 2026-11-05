@@ -1,0 +1,8 @@
+Compiler: /usr/bin/g++
+Task01/book.cpp: PASS
+Task02/prescription.cpp: PASS
+Task03/auditorium.cpp: PASS
+Task04/money.cpp: PASS
+Task05/time_playlist.cpp: PASS
+Task06/text.cpp: PASS
+Task07/complex_impedance.cpp: PASS
