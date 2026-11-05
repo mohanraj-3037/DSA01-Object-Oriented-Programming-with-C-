@@ -1,6 +1,0 @@
-Maximum fare: 3600 paise (Rs 36.00)
-20,000 journeys: 72000000 paise
-500,000 journeys: 1800000000 paise
-3,000,000 journeys: 10800000000 paise
-Signed 32-bit int maximum: 2147483647
-3-million total exceeds signed 32-bit int: yes

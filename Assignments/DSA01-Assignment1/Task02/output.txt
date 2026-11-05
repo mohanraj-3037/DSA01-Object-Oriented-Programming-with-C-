@@ -1,6 +1,0 @@
-Metro fare constants
-Inner: 1000 paise
-Middle: 2000 paise
-Outer: 3000 paise
-Peak surcharge: 20%
-Minimum remaining balance: 5000 paise
