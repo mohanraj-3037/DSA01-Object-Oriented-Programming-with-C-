@@ -1,0 +1,17 @@
+[PASS] Airport base fare is Rs 60
+[PASS] Airport weekday off-peak is Rs 60
+[PASS] Airport weekday peak is Rs 72
+[PASS] Airport weekend fare is Rs 54
+[PASS] Weekend peak does not stack surcharge
+[PASS] 10 AM is off-peak
+[PASS] 20:00 is off-peak
+[PASS] Invalid hour rejected
+[PASS] Pass covers first selected zone
+[PASS] Pass covers second selected zone
+[PASS] Pass does not cover Airport
+[PASS] Pass journey accepted without deduction
+[PASS] Uncovered Airport ride deducts Rs 60
+[PASS] Low-balance Airport ride denied
+[PASS] Invalid journey does not change balance
+
+Result: 15/15 tests passed.
