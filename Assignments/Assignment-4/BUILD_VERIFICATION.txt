@@ -1,0 +1,23 @@
+Build verification using g++ -std=c++17 -Wall -Wextra -pedantic
+
+Task01: PASS
+
+Task02: PASS
+
+Task03: PASS
+
+Task04: PASS
+
+Task05: PASS
+
+Task06: PASS
+
+Task02/prediction: PASS
+
+Task03/prediction: PASS
+
+Task04/prediction: PASS
+
+Task05/prediction: PASS
+
+Note: AddressSanitizer runtime evidence must be captured on the student's own machine.

@@ -1,0 +1,7 @@
+Staff (abstract) <|-- Professor
+Staff (abstract) <|-- LabAssistant
+Staff (abstract) <|-- GuestFaculty
+Staff: name, id, basic; pay() = 0
+Professor: research; pay() override
+LabAssistant: pay() override
+GuestFaculty: hours, rate; pay() override
