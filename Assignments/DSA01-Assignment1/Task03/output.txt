@@ -1,0 +1,26 @@
+Type sizes on this compiler (bytes)
+bool: 1
+char: 1
+int: 4
+unsigned int: 4
+long long: 8
+float: 4
+double: 8
+
+Integer limits
+INT_MIN: -2147483648
+INT_MAX: 2147483647
+LLONG_MAX: 9223372036854775807
+
+Fare values (paise)
+Inner: 1000
+Middle: 2000
+Outer: 3000
+Peak outer: 3600
+
+Worst-case daily collection for 3,000,000 journeys
+Total: 10800000000 paise
+INT_MAX: 2147483647 paise
+Fits in int: no
+
+Mixed int/double expression (7 / 2.0): 3.5

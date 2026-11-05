@@ -1,0 +1,1 @@
+Enter card balance in paise: Enter fare in paise: Payment accepted. New balance Rs 70.00

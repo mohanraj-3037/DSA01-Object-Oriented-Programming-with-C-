@@ -1,0 +1,19 @@
+[PASS] Inner off-peak fare is 1000 paise
+[PASS] Middle off-peak fare is 2000 paise
+[PASS] Outer off-peak fare is 3000 paise
+[PASS] 08:00 is peak
+[PASS] 10:00 is off-peak
+[PASS] 17:00 is peak
+[PASS] 20:00 is off-peak
+[PASS] Inner peak fare is 1200 paise
+[PASS] Middle peak fare is 2400 paise
+[PASS] Outer peak fare is 3600 paise
+[PASS] Exactly Rs 50 remaining is allowed
+[PASS] Less than Rs 50 remaining is denied
+[PASS] Negative balance is invalid
+[PASS] Negative fare is invalid
+[PASS] Invalid hour is rejected
+[PASS] Five-journey scenario accepts all five
+[PASS] Five-journey final balance is 10400 paise
+
+Result: 17/17 tests passed.

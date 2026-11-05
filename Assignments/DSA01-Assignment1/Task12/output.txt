@@ -1,0 +1,8 @@
+Airport fare examples
+Weekday off-peak: Rs 60.00
+Weekday peak: Rs 72.00
+Weekend off-peak: Rs 54.00
+Weekend peak hour (discount takes precedence): Rs 54.00
+
+Inner journey: Accepted (monthly pass used), balance Rs 200.00
+Airport journey: Accepted (fare deducted), fare Rs 72.00, balance Rs 128.00
